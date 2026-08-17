@@ -21,9 +21,9 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@heroui/react": "^3.2.3",
-    "@heroui/styles": "^3.2.3",
-    "next": "^16.3.0",
+    "@heroui/react": "^3.2.4",
+    "@heroui/styles": "^3.2.4",
+    "next": "^16.3.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
