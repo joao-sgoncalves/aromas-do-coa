@@ -7,6 +7,10 @@
     "heroui-react": {
       "command": "npx",
       "args": ["-y", "@heroui/react-mcp@latest"]
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["-y", "chrome-devtools-mcp@latest"]
     }
   }
 }
