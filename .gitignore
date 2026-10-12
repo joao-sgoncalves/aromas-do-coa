@@ -6,3 +6,6 @@
 
 # next.js
 /.next/
+
+# hero ui
+/.heroui-docs/
