@@ -1,16 +1,16 @@
 {
   "mcpServers": {
     "next-devtools": {
-      "command": "npx",
-      "args": ["-y", "next-devtools-mcp@latest"]
+      "command": "pnpx",
+      "args": ["--yes", "next-devtools-mcp@0.4.0"]
     },
     "heroui-react": {
-      "command": "npx",
-      "args": ["-y", "@heroui/react-mcp@latest"]
+      "command": "pnpx",
+      "args": ["--yes", "@heroui/react-mcp@1.1.2"]
     },
     "chrome-devtools": {
-      "command": "npx",
-      "args": ["-y", "chrome-devtools-mcp@latest"]
+      "command": "pnpx",
+      "args": ["--yes", "chrome-devtools-mcp@1.10.1"]
     }
   }
 }
