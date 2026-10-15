@@ -1,2 +1,123 @@
 @import "tailwindcss";
 @import "@heroui/styles";
+
+/*
+ * Aromas do Côa theme.
+ * Brand tokens first, then HeroUI's semantic variables mapped onto them.
+ * Gold (the foil "atom" of the logo) is the one accent; black, white and
+ * soft gray do the rest. Burgundy only marks the Tinto.
+ */
+@layer base {
+  :root,
+  .light,
+  [data-theme="light"] {
+    color-scheme: light;
+
+    /* Brand tokens */
+    --paper: oklch(100% 0 0); /* #ffffff */
+    --paper-sunk: oklch(97% 0.0012 106.4); /* #f5f5f4 */
+    --paper-raised: oklch(100% 0 0);
+    --ink: oklch(19.2% 0 0); /* #111111 */
+    --ink-muted: oklch(52.6% 0 0); /* #6b6b6b */
+    --line: oklch(92.2% 0 0); /* #e4e4e4 */
+    --line-strong: oklch(63.6% 0 0); /* #8a8a8a */
+    --night: oklch(14.5% 0 0); /* #0b0b0b */
+    --on-night: oklch(97% 0 0); /* #f5f5f5 */
+    --on-night-muted: oklch(71.5% 0 0); /* #a1a1a1 */
+    --gold: oklch(74.6% 0.0729 73.3); /* #c9a679, Ouro do Côa */
+    --gold-light: oklch(82.9% 0.0784 74); /* #e6c08e */
+    --gold-ink: oklch(53.2% 0.0706 73.7); /* #85663c, gold as text */
+    --gold-soft: oklch(95.6% 0.0177 79.6); /* #f7f0e4 */
+    --vinho: oklch(41.4% 0.1063 12.6); /* #8c2a3e, the Tinto only */
+
+    /* HeroUI semantic variables */
+    --background: var(--paper);
+    --foreground: var(--ink);
+    --surface: var(--paper-raised);
+    --surface-foreground: var(--ink);
+    --surface-secondary: var(--paper-sunk);
+    --surface-secondary-foreground: var(--ink);
+    --overlay: var(--paper-raised);
+    --overlay-foreground: var(--ink);
+    --muted: var(--ink-muted);
+    --default: var(--paper-sunk);
+    --default-foreground: var(--ink);
+    --accent: var(--gold);
+    --accent-foreground: var(--ink);
+    --field-background: var(--paper-raised);
+    --field-foreground: var(--ink);
+    --field-placeholder: var(--ink-muted);
+    --field-border: var(--line-strong);
+    --field-border-width: 1px;
+    --border: var(--line);
+    --separator: var(--line);
+    --focus: var(--ink);
+    --link: var(--ink);
+    --backdrop: oklch(0% 0 0 / 55%);
+    --radius: 18px;
+    --field-radius: 10px;
+    --surface-shadow: none;
+    --overlay-shadow: 0 20px 60px oklch(0% 0 0 / 12%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@theme inline {
+  --font-sans:
+    var(--font-geist), -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Arial, sans-serif;
+
+  --color-paper: var(--paper);
+  --color-paper-sunk: var(--paper-sunk);
+  --color-paper-raised: var(--paper-raised);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-night: var(--night);
+  --color-on-night: var(--on-night);
+  --color-on-night-muted: var(--on-night-muted);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-ink: var(--gold-ink);
+  --color-gold-soft: var(--gold-soft);
+  --color-vinho: var(--vinho);
+
+  --container-site: 1180px;
+  --container-measure: 36rem;
+  --radius-tile: 28px;
+  --radius-card: 18px;
+}
+
+/* Brand button variants on top of HeroUI's `.button` (see components/ui/link-button.tsx). */
+@layer components {
+  .button--xl {
+    @apply h-12 px-7 text-[15px] md:h-12;
+  }
+
+  .button--glass {
+    --button-bg: oklch(100% 0 0 / 16%);
+    --button-bg-hover: oklch(100% 0 0 / 28%);
+    --button-bg-pressed: oklch(100% 0 0 / 28%);
+    --button-fg: var(--on-night);
+    @apply backdrop-blur-md;
+  }
+
+  .button--ink {
+    --button-bg: var(--ink);
+    --button-bg-hover: oklch(30% 0 0);
+    --button-bg-pressed: oklch(30% 0 0);
+    --button-fg: var(--paper);
+  }
+}

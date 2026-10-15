@@ -36,7 +36,13 @@ const config = defineConfig([
     },
   },
   prettier,
-  globalIgnores([".next/**", "out/**", "build/**", "next-env.d.ts"]),
+  globalIgnores([
+    ".next/**",
+    "out/**",
+    "build/**",
+    "next-env.d.ts",
+    ".heroui-docs/**",
+  ]),
 ]);
 
 export default config;
