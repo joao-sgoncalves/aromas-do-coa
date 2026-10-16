@@ -1,8 +1,5 @@
-import { type Configuration } from "lint-staged";
+import { defineConfig } from "lint-staged/config";
 
-const config: Configuration = {
-  "*.{css,json,md,ts,tsx,yaml}": "pnpm format:check",
-  "*.{ts,tsx}": "pnpm lint",
-};
-
-export default config;
+export default defineConfig({
+  "*.{astro,css,html,json,ts}": "pnpm check",
+});

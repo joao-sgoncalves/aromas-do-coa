@@ -1,11 +1,8 @@
 # dependencies
 /node_modules/
 
-# typescript
-/next-env.d.ts
+# generated types
+/.astro/
 
-# next.js
-/.next/
-
-# hero ui
-/.heroui-docs/
+# build output
+/dist/
