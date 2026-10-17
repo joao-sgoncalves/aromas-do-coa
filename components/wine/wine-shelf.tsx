@@ -3,7 +3,6 @@ import Image, { type StaticImageData } from "next/image";
 
 import { format, type Dictionary } from "@/app/[lang]/dictionaries";
 import { LinkButton } from "@/components/ui/link-button";
-import { TerraceLines } from "@/components/ui/terrace-lines";
 import { BottleFigure } from "@/components/wine/bottle-figure";
 import { type Wine } from "@/content/wines";
 import { type Locale } from "@/lib/i18n";
@@ -65,12 +64,6 @@ export function WineShelf({
             >
               {name}
             </h2>
-            <TerraceLines
-              className={cn(
-                "w-20",
-                wine.slug === "tinto" ? "text-vinho/60" : "text-gold",
-              )}
-            />
             <p className="text-ink-muted max-w-xl text-[17px] leading-relaxed md:text-xl">
               {wine.tagline[lang]}
             </p>

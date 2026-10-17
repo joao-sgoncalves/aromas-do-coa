@@ -3,8 +3,6 @@
 import { Button, cn } from "@heroui/react";
 import { useEffect, useState } from "react";
 
-import { TerraceLines } from "@/components/ui/terrace-lines";
-
 export type TestimonialItem = { quote: string; name: string; place: string };
 
 type TestimonialsCarouselProps = {
@@ -59,12 +57,8 @@ export function TestimonialsCarousel({
   return (
     <section
       aria-labelledby="testimonials-title"
-      className="bg-gold-soft text-ink relative isolate overflow-hidden px-6 pt-32 pb-48"
+      className="bg-gold-soft text-ink px-6 py-32"
     >
-      <TerraceLines
-        variant="field"
-        className="text-gold absolute inset-x-0 bottom-0 -z-10 h-40 w-full opacity-40"
-      />
       <div className="mx-auto flex max-w-[900px] flex-col items-center gap-8 text-center">
         <h2
           id="testimonials-title"

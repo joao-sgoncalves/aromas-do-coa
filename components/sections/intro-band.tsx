@@ -1,5 +1,3 @@
-import { TerraceLines } from "@/components/ui/terrace-lines";
-
 type IntroBandProps = {
   id: string;
   kicker: string;
@@ -18,8 +16,7 @@ export function IntroBand({ id, kicker, statement, facts }: IntroBandProps) {
       className="bg-paper px-6 pt-28 pb-24 md:pt-36 md:pb-32"
     >
       <div className="max-w-site mx-auto flex flex-col items-center text-center">
-        <TerraceLines className="text-gold w-20" />
-        <p className="text-gold-ink mt-5 text-[11px] font-semibold tracking-[0.18em] uppercase">
+        <p className="text-gold-ink text-[11px] font-semibold tracking-[0.18em] uppercase">
           {kicker}
         </p>
         <h2
