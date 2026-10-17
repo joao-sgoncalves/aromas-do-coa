@@ -39,7 +39,7 @@ export function StorySplit({
       <div className="flex flex-col justify-center gap-5 px-6 py-16 md:px-16 lg:px-28">
         <h2
           id={`${id}-title`}
-          className="max-w-lg text-[32px] leading-[1.06] font-semibold tracking-[-0.03em] text-balance md:text-[52px]"
+          className="max-w-lg font-serif text-[36px] leading-[1.04] font-medium tracking-[-0.01em] text-balance md:text-[58px]"
         >
           {title}
         </h2>

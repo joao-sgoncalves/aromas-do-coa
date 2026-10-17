@@ -57,22 +57,22 @@ export function TestimonialsCarousel({
   return (
     <section
       aria-labelledby="testimonials-title"
-      className="bg-night text-on-night px-6 py-32"
+      className="bg-gold-soft text-ink px-6 py-32"
     >
       <div className="mx-auto flex max-w-[900px] flex-col items-center gap-8 text-center">
         <h2
           id="testimonials-title"
-          className="text-gold text-[15px] font-medium"
+          className="text-gold-ink text-[11px] font-semibold tracking-[0.16em] uppercase"
         >
           {labels.title}
         </h2>
         <figure aria-live="polite" className="flex flex-col items-center gap-8">
-          <blockquote className="min-h-[3.9em] text-[26px] leading-[1.28] font-medium tracking-[-0.025em] text-balance md:text-[40px]">
+          <blockquote className="min-h-[3.9em] font-serif text-[30px] leading-[1.22] font-medium tracking-[-0.01em] text-balance italic md:text-[46px]">
             {current.quote}
           </blockquote>
           <figcaption className="flex flex-col gap-1">
             <span className="text-base font-semibold">{current.name}</span>
-            <span className="text-on-night-muted text-sm">{current.place}</span>
+            <span className="text-ink-muted text-sm">{current.place}</span>
           </figcaption>
         </figure>
 
@@ -82,7 +82,7 @@ export function TestimonialsCarousel({
             variant="outline"
             aria-label={labels.previous}
             onPress={() => go(active - 1)}
-            className="text-on-night size-11 rounded-full border-white/40"
+            className="text-ink border-ink/25 size-11 rounded-full"
           >
             <Chevron direction="left" />
           </Button>
@@ -99,8 +99,8 @@ export function TestimonialsCarousel({
                 className={cn(
                   "h-2 cursor-pointer rounded-full transition-[width,background-color] duration-300 motion-reduce:transition-none",
                   index === active
-                    ? "bg-gold w-7"
-                    : "w-2 bg-white/30 hover:bg-white/50",
+                    ? "bg-gold-ink w-7"
+                    : "bg-ink/20 hover:bg-ink/40 w-2",
                 )}
               />
             ))}
@@ -110,7 +110,7 @@ export function TestimonialsCarousel({
             variant="outline"
             aria-label={labels.next}
             onPress={() => go(active + 1)}
-            className="text-on-night size-11 rounded-full border-white/40"
+            className="text-ink border-ink/25 size-11 rounded-full"
           >
             <Chevron direction="right" />
           </Button>

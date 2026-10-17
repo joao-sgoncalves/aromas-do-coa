@@ -12,22 +12,30 @@
     "buy": "Buy"
   },
   "hero": {
-    "label": "Aromas do Côa and our wines",
-    "choose": "Choose a slide",
-    "brandTab": "Aromas do Côa",
-    "brandKicker": "Vila Nova de Foz Côa",
-    "brandTitle": "From the Douro Superior to your glass.",
-    "brandSub": "Family wines, born on schist terraces.",
-    "brandPrimary": "Discover the wines",
-    "brandSecondary": "Visit the vineyard",
-    "newVintage": "New vintage",
-    "tintoSub": "Made of schist and long summers.",
-    "brancoSub": "Fresh as the mornings of the harvest.",
-    "buy": "Buy",
-    "seeVintages": "See the vintages",
-    "brandAlt": "An amphitheatre of vineyard terraces under a blue sky in Vila Nova de Foz Côa",
-    "tintoAlt": "A bottle of Aromas do Côa Red with the terraced Douro Superior valley behind it",
-    "brancoAlt": "A bottle of Aromas do Côa White among white grape bunches, on schist"
+    "kicker": "Vila Nova de Foz Côa",
+    "title": "From the Douro Superior to your glass.",
+    "sub": "Family wines, born on schist terraces.",
+    "primary": "Discover the wines",
+    "secondary": "Visit the vineyard",
+    "alt": "An amphitheatre of vineyard terraces under a blue sky in Vila Nova de Foz Côa"
+  },
+  "intro": {
+    "kicker": "Douro Family",
+    "statement": "A family vineyard where the Côa meets the Douro. Two wines, made without hurry.",
+    "facts": [
+      {
+        "value": "Douro Superior",
+        "label": "Vila Nova de Foz Côa"
+      },
+      {
+        "value": "Schist terraces",
+        "label": "Long, dry summers"
+      },
+      {
+        "value": "Picked by hand",
+        "label": "In September, in the cool hours"
+      }
+    ]
   },
   "wines": {
     "newVintage": "New vintage",
@@ -35,7 +43,11 @@
     "seeAll": "See all vintages",
     "viewVintage": "See the {year} vintage",
     "bottleAlt": "Bottle of Aromas do Côa {name} {year}",
-    "photoPending": "{name} {year} bottle, photo to come"
+    "photoPending": "{name} {year} bottle, photo to come",
+    "photoAlt": {
+      "tinto": "A bottle of Aromas do Côa Red Superior 2023 leaning on an old vine stump, against a wine-red wall",
+      "branco": "A bottle of Aromas do Côa White 2024 Limited Edition beside a glass of white wine, rissoles and limes"
+    }
   },
   "quinta": {
     "title": "A family in the Douro Superior.",

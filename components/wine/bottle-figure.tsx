@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import silhouette from "@/assets/bottles/silhouette.png";
 import { type Vintage } from "@/content/wines";
 
 type BottleFigureProps = {
@@ -12,9 +13,13 @@ type BottleFigureProps = {
   className?: string;
 };
 
+/** Rendered height of every bottle, photo or stand-in. */
+const HEIGHT = 360;
+
 /**
- * The bottle cut-out for a vintage. Until the studio photo exists, draws a
- * simple stand-in in the bottle's glass, capsule and label-stripe colors.
+ * The bottle cut-out for a vintage. Until the studio photo exists, shows a
+ * stand-in cut from the real bottle's silhouette, so it has the same size and
+ * shape as the photos beside it, painted in the glass, capsule and label colors.
  */
 export function BottleFigure({
   vintage,
@@ -28,7 +33,7 @@ export function BottleFigure({
       <Image
         src={vintage.bottle}
         alt={alt}
-        height={360}
+        height={HEIGHT}
         sizes="120px"
         className={className}
         style={{ width: "auto" }}
@@ -36,27 +41,25 @@ export function BottleFigure({
     );
   }
 
+  const mask = `url(${silhouette.src}) center / contain no-repeat`;
+
+  // The mask sits on an inner box: a mask on the outer one would also cut
+  // away the hover drop-shadow passed in through className.
   return (
-    <svg
-      viewBox="0 0 80 300"
-      role="img"
-      aria-label={pendingLabel}
-      className={className}
-      style={{ height: 360, width: "auto" }}
-    >
-      <path
-        d="M32 0h16v72c0 22 24 30 24 62v156a10 10 0 0 1-10 10H18a10 10 0 0 1-10-10V134c0-32 24-40 24-62Z"
-        fill={glass}
+    <div role="img" aria-label={pendingLabel} className={className}>
+      <div
+        style={{
+          height: HEIGHT,
+          aspectRatio: `${silhouette.width} / ${silhouette.height}`,
+          // Capsule over the top fifth, label from 42% to 87%, as on the photos.
+          background: [
+            `linear-gradient(to bottom, transparent 42%, #fbfaf7 42% 87%, transparent 87%)`,
+            `linear-gradient(to bottom, ${vintage.capsule} 20%, ${glass} 20%)`,
+          ].join(", "),
+          mask,
+          WebkitMask: mask,
+        }}
       />
-      <rect x="31" y="0" width="18" height="52" rx="2" fill={vintage.capsule} />
-      <rect x="12" y="160" width="56" height="86" rx="2" fill="#fbfaf7" />
-      <circle cx="40" cy="182" r="7" fill="#c9a679" />
-      <path
-        d="M16 214c10-5 24 3 48-3M16 222c10-5 24 3 48-3M16 230c10-5 24 3 48-3"
-        fill="none"
-        stroke={vintage.stripe}
-        strokeWidth="1.6"
-      />
-    </svg>
+    </div>
   );
 }
