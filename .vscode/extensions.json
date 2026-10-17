@@ -4,6 +4,7 @@
     "biomejs.biome",
     "bradlc.vscode-tailwindcss",
     "editorconfig.editorconfig",
-    "sonarsource.sonarlint-vscode"
+    "sonarsource.sonarlint-vscode",
+    "vitest.explorer"
   ]
 }
