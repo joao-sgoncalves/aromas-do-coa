@@ -50,7 +50,8 @@ export function WineShelf({
           </p>
         </header>
 
-        <ul className="mt-14 flex w-full snap-x snap-mandatory gap-6 overflow-x-auto pb-2 max-sm:justify-start sm:justify-center md:gap-[72px]">
+        {/* overflow-x also clips vertically, so pt-4 leaves room for the hover lift. */}
+        <ul className="mt-10 flex w-full snap-x snap-mandatory gap-6 overflow-x-auto pt-4 pb-2 max-sm:justify-start sm:justify-center md:gap-[72px]">
           {vintages.map((vintage) => {
             const label = [
               vintage.edition?.[lang],

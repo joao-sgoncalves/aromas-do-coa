@@ -1,6 +1,8 @@
 import { type StaticImageData } from "next/image";
 
+import branco2024 from "@/assets/bottles/branco-2024.png";
 import tinto2022 from "@/assets/bottles/tinto-2022.png";
+import tinto2023 from "@/assets/bottles/tinto-2023.png";
 import { type Localized } from "@/lib/i18n";
 
 export type WineType = "tinto" | "branco";
@@ -44,6 +46,7 @@ export const wines: Wine[] = [
       {
         year: 2023,
         edition: { pt: "Superior", en: "Superior" },
+        bottle: tinto2023,
         capsule: "#6b2b33",
         stripe: "#9c4a5c",
       },
@@ -63,6 +66,7 @@ export const wines: Wine[] = [
         year: 2024,
         isNew: true,
         edition: { pt: "Edição Limitada", en: "Limited Edition" },
+        bottle: branco2024,
         capsule: silver,
         stripe: silver,
       },

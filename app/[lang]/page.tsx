@@ -86,7 +86,7 @@ export default async function HomePage({ params }: PageProps) {
             wine={wine}
             lang={lang}
             dict={dict.wines}
-            tone={index % 2 === 0 ? "paper" : "sunk"}
+            tone={index % 2 === 0 ? "sunk" : "paper"}
           />
         ))}
 
