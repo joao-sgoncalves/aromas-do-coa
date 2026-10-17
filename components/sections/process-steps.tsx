@@ -26,7 +26,7 @@ export function ProcessSteps({
       <div className="max-w-site mx-auto">
         <h2
           id={`${id}-title`}
-          className="mb-14 text-center text-[32px] leading-[1.06] font-semibold tracking-[-0.03em] md:text-[52px]"
+          className="mb-14 text-center font-serif text-[36px] leading-[1.04] font-medium tracking-[-0.01em] md:text-[58px]"
         >
           {title}
         </h2>

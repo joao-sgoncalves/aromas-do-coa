@@ -1,5 +1,5 @@
 import { type Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Cormorant_Garamond, Open_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
 import { type ReactNode } from "react";
 
@@ -7,9 +7,19 @@ import { getDictionary } from "@/app/[lang]/dictionaries";
 import "@/app/globals.css";
 import { htmlLang, isLocale, locales } from "@/lib/i18n";
 
-const geist = Geist({
+/** The humanist sans of the logo, for text and interface. */
+const openSans = Open_Sans({
   subsets: ["latin"],
-  variable: "--font-geist",
+  variable: "--font-open-sans",
+  display: "swap",
+});
+
+/** A classical serif echoing the label's "Douro" and vintage, for display. */
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
   display: "swap",
 });
 
@@ -47,7 +57,7 @@ export default async function RootLayout({
   return (
     <html
       lang={htmlLang[lang]}
-      className={`light ${geist.variable}`}
+      className={`light ${openSans.variable} ${cormorant.variable}`}
       data-theme="light"
     >
       <body className="bg-background text-foreground font-sans">

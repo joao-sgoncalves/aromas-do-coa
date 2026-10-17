@@ -31,7 +31,7 @@ export function CtaPanel({ id, title, body, cta, image, alt }: CtaPanelProps) {
       <div className="flex flex-col items-center gap-3.5">
         <h2
           id={`${id}-title`}
-          className="max-w-3xl text-[36px] leading-[1.04] font-semibold tracking-[-0.035em] text-balance md:text-[64px]"
+          className="max-w-3xl font-serif text-[40px] leading-[1.02] font-medium tracking-[-0.01em] text-balance md:text-[72px]"
         >
           {title}
         </h2>

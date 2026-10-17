@@ -1,18 +1,19 @@
 import { notFound } from "next/navigation";
 
 import { getDictionary } from "@/app/[lang]/dictionaries";
+import brancoTable from "@/assets/images/branco-2024-table.jpg";
 import grapesOnVine from "@/assets/images/grapes-on-vine.jpg";
-import redLandscape from "@/assets/images/red-2022-landscape.jpg";
 import terracesAmphitheatre from "@/assets/images/terraces-amphitheatre.jpg";
 import terracesSchist from "@/assets/images/terraces-schist.jpg";
 import terracesValley from "@/assets/images/terraces-valley.jpg";
+import tintoDriftwood from "@/assets/images/tinto-2023-driftwood.jpg";
 import vineyardTrack from "@/assets/images/vineyard-track.jpg";
-import whiteGrapes from "@/assets/images/white-2023-grapes.jpg";
 import youngVine from "@/assets/images/young-vine-schist.jpg";
-import { HeroCarousel, type HeroSlide } from "@/components/home/hero-carousel";
+import { Hero } from "@/components/home/hero";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { CtaPanel } from "@/components/sections/cta-panel";
+import { IntroBand } from "@/components/sections/intro-band";
 import { NextEvent } from "@/components/sections/next-event";
 import { ProcessSteps } from "@/components/sections/process-steps";
 import { StorySplit } from "@/components/sections/story-split";
@@ -21,15 +22,12 @@ import { WineShelf } from "@/components/wine/wine-shelf";
 import { upcomingEvents } from "@/content/events";
 import { navItems } from "@/content/site";
 import { testimonials } from "@/content/testimonials";
-import { newestVintage, wines } from "@/content/wines";
+import { wines } from "@/content/wines";
 import { isLocale } from "@/lib/i18n";
 
 type PageProps = { params: Promise<{ lang: string }> };
 
-const wineHero = {
-  tinto: { image: redLandscape, position: "60% 50%" },
-  branco: { image: whiteGrapes, position: "50% 40%" },
-} as const;
+const winePhoto = { tinto: tintoDriftwood, branco: brancoTable } as const;
 
 export default async function HomePage({ params }: PageProps) {
   const { lang } = await params;
@@ -39,45 +37,27 @@ export default async function HomePage({ params }: PageProps) {
   const navLabel = (href: string) =>
     navItems.find((item) => item.href === href)?.label[lang] ?? "";
 
-  const slides: HeroSlide[] = [
-    {
-      id: "brand",
-      tab: dict.hero.brandTab,
-      kicker: dict.hero.brandKicker,
-      title: dict.hero.brandTitle,
-      sub: dict.hero.brandSub,
-      image: terracesAmphitheatre,
-      alt: dict.hero.brandAlt,
-      primary: { href: "#tinto", label: dict.hero.brandPrimary },
-      secondary: { href: "#quinta", label: dict.hero.brandSecondary },
-    },
-    ...wines.map((wine) => {
-      const newest = newestVintage(wine);
-      const edition = newest.edition ? `, ${newest.edition[lang]}` : "";
-      return {
-        id: wine.slug,
-        tab: wine.name[lang],
-        kicker: `${dict.hero.newVintage}: ${wine.name[lang]} ${newest.year}${edition}`,
-        title: wine.name[lang],
-        sub: wine.slug === "tinto" ? dict.hero.tintoSub : dict.hero.brancoSub,
-        image: wineHero[wine.slug].image,
-        position: wineHero[wine.slug].position,
-        alt: wine.slug === "tinto" ? dict.hero.tintoAlt : dict.hero.brancoAlt,
-        primary: { href: "#contacto", label: dict.hero.buy },
-        secondary: { href: `#${wine.slug}`, label: dict.hero.seeVintages },
-      };
-    }),
-  ];
-
   const processImages = [youngVine, grapesOnVine, vineyardTrack];
 
   return (
     <>
       <SiteHeader lang={lang} dict={dict} />
       <main>
-        <HeroCarousel
-          slides={slides}
-          labels={{ region: dict.hero.label, choose: dict.hero.choose }}
+        <Hero
+          kicker={dict.hero.kicker}
+          title={dict.hero.title}
+          sub={dict.hero.sub}
+          image={terracesAmphitheatre}
+          alt={dict.hero.alt}
+          primary={{ href: "#tinto", label: dict.hero.primary }}
+          secondary={{ href: "#quinta", label: dict.hero.secondary }}
+        />
+
+        <IntroBand
+          id="intro"
+          kicker={dict.intro.kicker}
+          statement={dict.intro.statement}
+          facts={dict.intro.facts}
         />
 
         {wines.map((wine, index) => (
@@ -87,6 +67,11 @@ export default async function HomePage({ params }: PageProps) {
             lang={lang}
             dict={dict.wines}
             tone={index % 2 === 0 ? "sunk" : "paper"}
+            photo={{
+              image: winePhoto[wine.slug],
+              alt: dict.wines.photoAlt[wine.slug],
+            }}
+            reverse={index % 2 === 1}
           />
         ))}
 

@@ -28,7 +28,7 @@ export function NextEvent({ id, lang, event, labels }: NextEventProps) {
       <div className="max-w-site mx-auto">
         <h2
           id={`${id}-title`}
-          className="mb-10 text-center text-[32px] leading-[1.06] font-semibold tracking-[-0.03em] md:text-[52px]"
+          className="mb-10 text-center font-serif text-[36px] leading-[1.04] font-medium tracking-[-0.01em] md:text-[58px]"
         >
           {labels.title}
         </h2>
@@ -39,7 +39,7 @@ export function NextEvent({ id, lang, event, labels }: NextEventProps) {
               dateTime={event.start}
               className="flex w-24 flex-none flex-col"
             >
-              <span className="text-[44px] leading-none font-semibold tracking-[-0.03em] tabular-nums">
+              <span className="font-serif text-[48px] leading-none font-medium tabular-nums">
                 {day}
               </span>
               <span className="text-gold-ink mt-1.5 text-sm font-medium">

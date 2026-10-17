@@ -12,22 +12,30 @@
     "buy": "Comprar"
   },
   "hero": {
-    "label": "Aromas do Côa e os nossos vinhos",
-    "choose": "Escolher diapositivo",
-    "brandTab": "Aromas do Côa",
-    "brandKicker": "Vila Nova de Foz Côa",
-    "brandTitle": "Do Douro Superior para o seu copo.",
-    "brandSub": "Vinhos de família, nascidos em socalcos de xisto.",
-    "brandPrimary": "Descobrir os vinhos",
-    "brandSecondary": "Conhecer a quinta",
-    "newVintage": "Nova colheita",
-    "tintoSub": "Feito de xisto e de verões longos.",
-    "brancoSub": "Fresco como as manhãs da vindima.",
-    "buy": "Comprar",
-    "seeVintages": "Ver as colheitas",
-    "brandAlt": "Socalcos de vinha em anfiteatro sob céu azul, em Vila Nova de Foz Côa",
-    "tintoAlt": "Garrafa de Aromas do Côa Tinto com o vale de socalcos do Douro Superior ao fundo",
-    "brancoAlt": "Garrafa de Aromas do Côa Branco entre cachos de uva branca, sobre xisto"
+    "kicker": "Vila Nova de Foz Côa",
+    "title": "Do Douro Superior para o seu copo.",
+    "sub": "Vinhos de família, nascidos em socalcos de xisto.",
+    "primary": "Descobrir os vinhos",
+    "secondary": "Conhecer a quinta",
+    "alt": "Socalcos de vinha em anfiteatro sob céu azul, em Vila Nova de Foz Côa"
+  },
+  "intro": {
+    "kicker": "Douro Family",
+    "statement": "Uma vinha de família, onde o Côa encontra o Douro. Dois vinhos, feitos com tempo.",
+    "facts": [
+      {
+        "value": "Douro Superior",
+        "label": "Vila Nova de Foz Côa"
+      },
+      {
+        "value": "Socalcos de xisto",
+        "label": "Verões longos e secos"
+      },
+      {
+        "value": "Vindima à mão",
+        "label": "Em setembro, nas horas frescas"
+      }
+    ]
   },
   "wines": {
     "newVintage": "Nova colheita",
@@ -35,7 +43,11 @@
     "seeAll": "Ver todas as colheitas",
     "viewVintage": "Ver a colheita {year}",
     "bottleAlt": "Garrafa de Aromas do Côa {name} {year}",
-    "photoPending": "Garrafa de {name} {year}, fotografia a fazer"
+    "photoPending": "Garrafa de {name} {year}, fotografia a fazer",
+    "photoAlt": {
+      "tinto": "Garrafa de Aromas do Côa Tinto Superior 2023 encostada a uma velha cepa, sobre fundo cor de vinho",
+      "branco": "Garrafa de Aromas do Côa Branco 2024 Edição Limitada ao lado de um copo de vinho branco, rissóis e limas"
+    }
   },
   "quinta": {
     "title": "Uma família no Douro Superior.",
