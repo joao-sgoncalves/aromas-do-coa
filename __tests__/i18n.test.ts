@@ -2,6 +2,7 @@ import { format } from "@/app/[lang]/dictionaries";
 import en from "@/app/[lang]/dictionaries/en.json";
 import pt from "@/app/[lang]/dictionaries/pt.json";
 import { upcomingEvents } from "@/content/events";
+import { localeHref } from "@/content/site";
 import { newestVintage, wines } from "@/content/wines";
 import { isLocale } from "@/lib/i18n";
 
@@ -36,4 +37,9 @@ test("newestVintage picks the latest year of each wine", () => {
 
 test("upcomingEvents drops events that have ended", () => {
   expect(upcomingEvents(new Date("2099-01-01"))).toEqual([]);
+});
+
+test("localeHref points home anchors and inner pages at the locale", () => {
+  expect(localeHref("pt", "#tinto")).toBe("/pt#tinto");
+  expect(localeHref("en", "/about")).toBe("/en/about");
 });

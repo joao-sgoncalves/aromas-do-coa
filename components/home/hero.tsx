@@ -8,8 +8,9 @@ type HeroProps = {
   sub: string;
   image: StaticImageData;
   alt: string;
-  primary: { href: string; label: string };
-  secondary: { href: string; label: string };
+  /** Inner pages open on the photograph alone, without the two ways in. */
+  primary?: { href: string; label: string };
+  secondary?: { href: string; label: string };
 };
 
 /**
@@ -40,6 +41,11 @@ export function Hero({
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,rgb(27_20_18/0.62)_0%,rgb(27_20_18/0.42)_36%,transparent_62%,rgb(27_20_18/0.55)_100%)]"
       />
+      {/* Darkens the whole photograph so the text reads over bright, busy vineyards. */}
+      <div
+        aria-hidden
+        className="bg-night/35 pointer-events-none absolute inset-0 -z-10"
+      />
 
       <div className="flex flex-col items-center px-6 pt-36 [text-shadow:0_1px_18px_rgb(0_0_0/0.35)] md:pt-40">
         <p className="text-on-night/85 mb-4 text-[11px] font-semibold tracking-[0.18em] uppercase">
@@ -54,21 +60,25 @@ export function Hero({
       </div>
 
       <div className="flex w-full max-w-md flex-row flex-wrap justify-center gap-4 px-6 pb-14 sm:w-auto sm:max-w-none">
-        <LinkButton
-          href={primary.href}
-          size="xl"
-          className="min-w-[200px] flex-1 sm:flex-none"
-        >
-          {primary.label}
-        </LinkButton>
-        <LinkButton
-          href={secondary.href}
-          tone="glass"
-          size="xl"
-          className="min-w-[200px] flex-1 sm:flex-none"
-        >
-          {secondary.label}
-        </LinkButton>
+        {primary && (
+          <LinkButton
+            href={primary.href}
+            size="xl"
+            className="min-w-[200px] flex-1 sm:flex-none"
+          >
+            {primary.label}
+          </LinkButton>
+        )}
+        {secondary && (
+          <LinkButton
+            href={secondary.href}
+            tone="glass"
+            size="xl"
+            className="min-w-[200px] flex-1 sm:flex-none"
+          >
+            {secondary.label}
+          </LinkButton>
+        )}
       </div>
     </section>
   );

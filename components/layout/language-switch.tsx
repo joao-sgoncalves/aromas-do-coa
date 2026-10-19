@@ -1,4 +1,5 @@
 import { cn } from "@heroui/react";
+import { type Route } from "next";
 import NextLink from "next/link";
 
 import { type Locale, locales } from "@/lib/i18n";
@@ -6,9 +7,12 @@ import { type Locale, locales } from "@/lib/i18n";
 export function LanguageSwitch({
   lang,
   label,
+  path = "",
 }: {
   lang: Locale;
   label: string;
+  /** Path after the locale, so switching language keeps the reader on the same page. */
+  path?: string;
 }) {
   return (
     <nav
@@ -18,7 +22,7 @@ export function LanguageSwitch({
       {locales.map((locale) => (
         <NextLink
           key={locale}
-          href={`/${locale}`}
+          href={`/${locale}${path}` as Route}
           hrefLang={locale}
           aria-current={locale === lang ? "true" : undefined}
           className={cn(

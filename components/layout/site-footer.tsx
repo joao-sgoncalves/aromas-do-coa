@@ -4,13 +4,14 @@ import { type ReactNode } from "react";
 import { type Dictionary } from "@/app/[lang]/dictionaries";
 import logo from "@/assets/brand/logo.png";
 import { SocialLinks } from "@/components/layout/social-links";
+import { localeHref } from "@/content/site";
 import { wines } from "@/content/wines";
 import { type Locale } from "@/lib/i18n";
 
 type SiteFooterProps = {
   lang: Locale;
   dict: Dictionary["footer"];
-  nav: { quinta: string; process: string; agenda: string };
+  nav: { story: string; process: string; agenda: string };
 };
 
 function Column({ title, children }: { title: string; children: ReactNode }) {
@@ -44,7 +45,10 @@ export function SiteFooter({ lang, dict, nav }: SiteFooterProps) {
           <Column title={dict.wines}>
             {wines.map((wine) => (
               <li key={wine.slug}>
-                <a href={`#${wine.slug}`} className={linkClass}>
+                <a
+                  href={localeHref(lang, `#${wine.slug}`)}
+                  className={linkClass}
+                >
                   {wine.name[lang]}:{" "}
                   {[...wine.vintages]
                     .sort((a, b) => b.year - a.year)
@@ -54,7 +58,7 @@ export function SiteFooter({ lang, dict, nav }: SiteFooterProps) {
               </li>
             ))}
             <li>
-              <a href="#contacto" className={linkClass}>
+              <a href={localeHref(lang, "#contacto")} className={linkClass}>
                 {dict.whereToBuy}
               </a>
             </li>
@@ -62,17 +66,17 @@ export function SiteFooter({ lang, dict, nav }: SiteFooterProps) {
 
           <Column title={dict.brand}>
             <li>
-              <a href="#quinta" className={linkClass}>
-                {nav.quinta}
+              <a href={localeHref(lang, "/about")} className={linkClass}>
+                {nav.story}
               </a>
             </li>
             <li>
-              <a href="#processo" className={linkClass}>
+              <a href={localeHref(lang, "#processo")} className={linkClass}>
                 {nav.process}
               </a>
             </li>
             <li>
-              <a href="#agenda" className={linkClass}>
+              <a href={localeHref(lang, "#agenda")} className={linkClass}>
                 {nav.agenda}
               </a>
             </li>
@@ -80,7 +84,7 @@ export function SiteFooter({ lang, dict, nav }: SiteFooterProps) {
 
           <Column title={dict.contact}>
             <li>
-              <a href="#contacto" className={linkClass}>
+              <a href={localeHref(lang, "#contacto")} className={linkClass}>
                 {dict.write}
               </a>
             </li>

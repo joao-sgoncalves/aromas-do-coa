@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Aromas do Côa | Wines from the Douro Superior",
-    "description": "Family wines from schist terraces in Vila Nova de Foz Côa, in Portugal's Douro Superior."
+    "description": "Family wines from the Douro Superior, made in our own cellar from our own grapes only, in Vila Nova de Foz Côa."
   },
   "nav": {
     "label": "Main",
@@ -13,27 +13,27 @@
   },
   "hero": {
     "kicker": "Vila Nova de Foz Côa",
-    "title": "From the Douro Superior to your glass.",
-    "sub": "Family wines, born on schist terraces.",
+    "title": "We bottle the soul of the Douro Superior.",
+    "sub": "Family wines, made from our own grapes only.",
     "primary": "Discover the wines",
-    "secondary": "Visit the vineyard",
+    "secondary": "Our story",
     "alt": "An amphitheatre of vineyard terraces under a blue sky in Vila Nova de Foz Côa"
   },
   "intro": {
     "kicker": "Douro Family",
-    "statement": "A family vineyard where the Côa meets the Douro. Two wines, made without hurry.",
+    "statement": "Some places reveal themselves first through scent. Ours smells of rockrose, wild lavender and almond blossom.",
     "facts": [
       {
-        "value": "Douro Superior",
-        "label": "Vila Nova de Foz Côa"
+        "value": "22 hectares",
+        "label": "Of vineyard in the Douro Superior"
       },
       {
-        "value": "Schist terraces",
-        "label": "Long, dry summers"
+        "value": "Only our grapes",
+        "label": "Made in our own cellar"
       },
       {
-        "value": "Picked by hand",
-        "label": "In September, in the cool hours"
+        "value": "Three generations",
+        "label": "From grandparents to parents to children"
       }
     ]
   },
@@ -50,13 +50,16 @@
     }
   },
   "quinta": {
-    "title": "A family in the Douro Superior.",
-    "body": "We planted our vines on schist terraces, a few kilometres from where the Côa meets the Douro. Summers here are long and dry, and every vine works for every bunch.",
+    "title": "From the office to the vineyard.",
+    "body": [
+      "We are a small Douro family, tied to the vines for generations. For years we devoted ourselves to growing grapes, but a dream was waiting: to make wine under the family's name.",
+      "That dream took shape when one of our sons traded the office for the vineyard. In 2022 our first red was born and, with it, Aromas do Côa."
+    ],
     "cta": "Our story",
     "alt": "Vineyard terraces on schist in the Douro Superior"
   },
   "process": {
-    "title": "From schist to glass.",
+    "title": "From our soil to the bottle.",
     "steps": [
       {
         "title": "The vineyard",
@@ -69,9 +72,9 @@
         "alt": "Ripe red grape bunches on the vine"
       },
       {
-        "title": "The wine",
-        "text": "[Winemaking and ageing, to be confirmed with the family.]",
-        "alt": "A dirt track between vineyard terraces"
+        "title": "The cellar",
+        "text": "Made by us in our own cellar, by traditional methods and with minimal intervention. We let the grape speak.",
+        "alt": "A glass of red wine beside a bottle of Aromas do Côa Superior 2023 and a decanter"
       }
     ]
   },
@@ -101,5 +104,97 @@
     "whereToBuy": "Where to buy",
     "responsible": "Enjoy responsibly.",
     "rights": "All rights reserved."
+  },
+  "about": {
+    "meta": {
+      "title": "Our story | Aromas do Côa",
+      "description": "A Douro family from Vila Nova de Foz Côa: generations tied to the vines, 22 hectares in the Douro Superior, and wines made from our own grapes only."
+    },
+    "hero": {
+      "kicker": "Our story",
+      "title": "From the land we inherited comes the wine we will leave behind.",
+      "sub": "A Douro family from Vila Nova de Foz Côa, tied to the vines from one generation to the next.",
+      "alt": "A valley of terraced vineyards in the Douro Superior, with hills behind"
+    },
+    "aromas": {
+      "kicker": "Aromas do Côa",
+      "title": "Some places reveal themselves first through scent.",
+      "body": [
+        "In the Douro Superior, before the vines even wake, the air fills with the scent of rockrose, wild lavender, wildflowers and almond blossom. Our name was born from that richness of aromas, as singular as it is unforgettable.",
+        "Scent is the purest way to keep a memory. It stays as time passes and carries us back to places we thought we had forgotten. That is what we want to offer in every bottle: not just a wine, but the living memory of a land.",
+        "We believe true luxury comes not from display but from origin: from respect for nature and the patience to wait for the right moment. No artifice. No excess. Only the truth of the place it comes from."
+      ]
+    },
+    "roots": {
+      "kicker": "Our roots",
+      "title": "The land gives back only to those who respect it.",
+      "body": [
+        "Our story begins long before the first bottle. It is a family story, of generations bound to the land and to rural life, and of a love of winegrowing handed down from grandparents to parents, and from parents to children.",
+        "From our grandparents and parents we learned what work, sacrifice, resilience, humility and perseverance truly mean. We received these values as a legacy, and they still guide every decision we make."
+      ],
+      "alt": "A young vine growing from schist stones, with vineyard terraces behind"
+    },
+    "land": {
+      "kicker": "Since 2014",
+      "statement": "We have invested and grown steadily, in the heart of the Douro Superior, in the municipality of Vila Nova de Foz Côa.",
+      "facts": [
+        {
+          "value": "22 ha",
+          "label": "Of vineyard"
+        },
+        {
+          "value": "5 ha",
+          "label": "Of olive groves"
+        },
+        {
+          "value": "4 ha",
+          "label": "Of almond orchards"
+        }
+      ]
+    },
+    "dream": {
+      "kicker": "2022",
+      "title": "From the office to the vineyard.",
+      "body": [
+        "For years we devoted ourselves to growing grapes, carrying on the legacy we had received. But a dream was waiting: to turn the fruit of our land into wine, with its own identity and the family's name.",
+        "That dream took shape through one of our sons. A solicitor by profession, he never stopped feeling that his roots were in the land. One day he traded the security of an office for the uncertainty of a dream, and came back to the vineyards where he grew up and to what his grandparents had taught him.",
+        "In 2022, with the release of our first red wine, the Aromas do Côa brand was born."
+      ],
+      "alt": "A dirt track between vineyard terraces, beside a schist wall"
+    },
+    "passion": {
+      "lines": ["Not by chance.", "Not by opportunity.", "But by passion."],
+      "body": "The passion of someone who lives the vineyard, knows every plot, every bunch and every harvest, and believes a great wine begins long before it reaches the cellar."
+    },
+    "cellar": {
+      "kicker": "From our soil to the bottle",
+      "title": "We want the grape to speak.",
+      "body": [
+        "We make all our wines ourselves, in our own cellar, from our own grapes only: white and red varieties, chosen and tended by the family with the greatest care.",
+        "We favour traditional, hand-crafted methods, close attention at every stage and minimal intervention, so that each wine expresses the place it comes from and the hands that work it."
+      ],
+      "alt": "The label of Aromas do Côa Superior 2023, with its gold atom, beside a glass of red wine"
+    },
+    "symbol": {
+      "kicker": "Our symbol",
+      "title": "The invisible elements of every wine.",
+      "body": "Inspired by the structure of an atom, our symbol stands for the union of the quiet forces that make each wine unique. They cannot be measured, yet they are present in every decision, every harvest and every bottle.",
+      "forces": [
+        "Passion",
+        "Dedication",
+        "Land",
+        "Time",
+        "Family",
+        "Resilience",
+        "Sacrifice"
+      ],
+      "closing": "Apart, they are only parts. Together, they create identity, emotion and authenticity."
+    },
+    "closing": {
+      "title": "Because wine runs out. But the memory of a great wine remains.",
+      "body": "May every bottle carry a piece of this land, its landscape and its story.",
+      "cta": "Discover the wines",
+      "alt": "An amphitheatre of vineyard terraces under a blue sky in Vila Nova de Foz Côa"
+    }
   }
 }
