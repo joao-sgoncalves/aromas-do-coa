@@ -6,8 +6,8 @@ import grapesOnVine from "@/assets/images/grapes-on-vine.jpg";
 import terracesAmphitheatre from "@/assets/images/terraces-amphitheatre.jpg";
 import terracesSchist from "@/assets/images/terraces-schist.jpg";
 import terracesValley from "@/assets/images/terraces-valley.jpg";
+import tintoDecanter from "@/assets/images/tinto-2023-decanter.jpg";
 import tintoDriftwood from "@/assets/images/tinto-2023-driftwood.jpg";
-import vineyardTrack from "@/assets/images/vineyard-track.jpg";
 import youngVine from "@/assets/images/young-vine-schist.jpg";
 import { Hero } from "@/components/home/hero";
 import { SiteFooter } from "@/components/layout/site-footer";
@@ -20,7 +20,7 @@ import { StorySplit } from "@/components/sections/story-split";
 import { TestimonialsCarousel } from "@/components/sections/testimonials-carousel";
 import { WineShelf } from "@/components/wine/wine-shelf";
 import { upcomingEvents } from "@/content/events";
-import { navItems } from "@/content/site";
+import { localeHref, navItems } from "@/content/site";
 import { testimonials } from "@/content/testimonials";
 import { wines } from "@/content/wines";
 import { isLocale } from "@/lib/i18n";
@@ -37,7 +37,7 @@ export default async function HomePage({ params }: PageProps) {
   const navLabel = (href: string) =>
     navItems.find((item) => item.href === href)?.label[lang] ?? "";
 
-  const processImages = [youngVine, grapesOnVine, vineyardTrack];
+  const processImages = [youngVine, grapesOnVine, tintoDecanter];
 
   return (
     <>
@@ -50,7 +50,10 @@ export default async function HomePage({ params }: PageProps) {
           image={terracesAmphitheatre}
           alt={dict.hero.alt}
           primary={{ href: "#tinto", label: dict.hero.primary }}
-          secondary={{ href: "#quinta", label: dict.hero.secondary }}
+          secondary={{
+            href: localeHref(lang, "/about"),
+            label: dict.hero.secondary,
+          }}
         />
 
         <IntroBand
@@ -79,7 +82,7 @@ export default async function HomePage({ params }: PageProps) {
           id="quinta"
           title={dict.quinta.title}
           body={dict.quinta.body}
-          cta={{ href: "#quinta", label: dict.quinta.cta }}
+          cta={{ href: localeHref(lang, "/about"), label: dict.quinta.cta }}
           image={terracesSchist}
           alt={dict.quinta.alt}
         />
@@ -122,7 +125,7 @@ export default async function HomePage({ params }: PageProps) {
         lang={lang}
         dict={dict.footer}
         nav={{
-          quinta: navLabel("#quinta"),
+          story: navLabel("/about"),
           process: navLabel("#processo"),
           agenda: navLabel("#agenda"),
         }}

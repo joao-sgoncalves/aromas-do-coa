@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Aromas do Côa | Vinhos do Douro Superior",
-    "description": "Vinhos de família, nascidos em socalcos de xisto em Vila Nova de Foz Côa, no Douro Superior."
+    "description": "Vinhos de família do Douro Superior, feitos em adega própria só com uvas das nossas vinhas, em Vila Nova de Foz Côa."
   },
   "nav": {
     "label": "Principal",
@@ -13,27 +13,27 @@
   },
   "hero": {
     "kicker": "Vila Nova de Foz Côa",
-    "title": "Do Douro Superior para o seu copo.",
-    "sub": "Vinhos de família, nascidos em socalcos de xisto.",
+    "title": "Engarrafamos a alma do Douro Superior.",
+    "sub": "Vinhos de família, feitos só com uvas das nossas vinhas.",
     "primary": "Descobrir os vinhos",
-    "secondary": "Conhecer a quinta",
+    "secondary": "A nossa história",
     "alt": "Socalcos de vinha em anfiteatro sob céu azul, em Vila Nova de Foz Côa"
   },
   "intro": {
     "kicker": "Douro Family",
-    "statement": "Uma vinha de família, onde o Côa encontra o Douro. Dois vinhos, feitos com tempo.",
+    "statement": "Há lugares que se revelam primeiro pelo aroma. O nosso cheira a estevas, rosmaninho e amendoeiras em flor.",
     "facts": [
       {
-        "value": "Douro Superior",
-        "label": "Vila Nova de Foz Côa"
+        "value": "22 hectares",
+        "label": "De vinha no Douro Superior"
       },
       {
-        "value": "Socalcos de xisto",
-        "label": "Verões longos e secos"
+        "value": "Uvas só nossas",
+        "label": "Vinificadas em adega própria"
       },
       {
-        "value": "Vindima à mão",
-        "label": "Em setembro, nas horas frescas"
+        "value": "Três gerações",
+        "label": "Dos avós aos pais, dos pais aos filhos"
       }
     ]
   },
@@ -50,13 +50,16 @@
     }
   },
   "quinta": {
-    "title": "Uma família no Douro Superior.",
-    "body": "Plantámos as nossas vinhas em socalcos sobre o xisto, a poucos quilómetros de onde o Côa encontra o Douro. Aqui o verão é longo e seco, e cada videira trabalha para cada cacho.",
+    "title": "Do escritório para a vinha.",
+    "body": [
+      "Somos uma pequena família duriense, ligada à vinha há gerações. Durante anos dedicámo-nos à produção de uvas, mas havia um sonho guardado: fazer vinho com o nome da família.",
+      "Esse sonho ganhou forma quando um filho trocou o escritório pela vinha. Em 2022 nasceu o nosso primeiro tinto e, com ele, a Aromas do Côa."
+    ],
     "cta": "A nossa história",
     "alt": "Socalcos de vinha sobre o xisto no Douro Superior"
   },
   "process": {
-    "title": "Do xisto ao copo.",
+    "title": "Do nosso chão para a garrafa.",
     "steps": [
       {
         "title": "A vinha",
@@ -69,9 +72,9 @@
         "alt": "Cachos de uva tinta maduros na videira"
       },
       {
-        "title": "O vinho",
-        "text": "[Vinificação e estágio, a confirmar com a família.]",
-        "alt": "Caminho de terra entre socalcos de vinha"
+        "title": "A adega",
+        "text": "Vinificado por nós, em adega própria, com métodos tradicionais e intervenção mínima. Que seja a uva a falar.",
+        "alt": "Copo de vinho tinto ao lado de uma garrafa de Aromas do Côa Superior 2023 e de um decantador"
       }
     ]
   },
@@ -101,5 +104,97 @@
     "whereToBuy": "Onde comprar",
     "responsible": "Seja responsável. Beba com moderação.",
     "rights": "Todos os direitos reservados."
+  },
+  "about": {
+    "meta": {
+      "title": "A nossa história | Aromas do Côa",
+      "description": "Uma família duriense de Vila Nova de Foz Côa: gerações ligadas à vinha, 22 hectares no Douro Superior e vinhos feitos só com uvas nossas."
+    },
+    "hero": {
+      "kicker": "A nossa história",
+      "title": "Da terra que herdámos, nasce o vinho que deixaremos.",
+      "sub": "Uma família duriense de Vila Nova de Foz Côa, ligada à vinha de geração em geração.",
+      "alt": "Vale de vinhas em socalcos no Douro Superior, com serras ao fundo"
+    },
+    "aromas": {
+      "kicker": "Aromas do Côa",
+      "title": "Há lugares que se revelam primeiro pelo aroma.",
+      "body": [
+        "No Douro Superior, antes mesmo de a vinha despertar, o ar enche-se do perfume das estevas, dos rosmaninhos, das flores silvestres e das amendoeiras em flor. Foi desta riqueza aromática, tão singular quanto inesquecível, que nasceu o nosso nome.",
+        "Os aromas são a forma mais pura de guardar uma memória. Permanecem quando o tempo passa e transportam-nos para lugares que julgávamos esquecidos. É isso que queremos oferecer em cada garrafa: não apenas um vinho, mas a memória viva de um território.",
+        "Acreditamos que o verdadeiro luxo não nasce da ostentação, mas da origem: do respeito pela natureza e da paciência de esperar pelo tempo certo. Sem artifícios. Sem excessos. Apenas a verdade do lugar onde nasceu."
+      ]
+    },
+    "roots": {
+      "kicker": "As raízes",
+      "title": "A terra só retribui a quem a respeita.",
+      "body": [
+        "A nossa história começa muito antes da primeira garrafa. É uma história de família, de gerações ligadas à terra e ao mundo rural, de uma paixão pela viticultura transmitida de avós para pais e de pais para filhos.",
+        "Foi com os nossos avós e pais que aprendemos o verdadeiro significado do trabalho, do sacrifício, da resiliência, da humildade e da perseverança. Valores que recebemos como legado e que ainda hoje orientam cada uma das nossas decisões."
+      ],
+      "alt": "Videira jovem a nascer entre pedras de xisto, com socalcos de vinha ao fundo"
+    },
+    "land": {
+      "kicker": "Desde 2014",
+      "statement": "Investimos e crescemos com tempo, no coração do Douro Superior, no concelho de Vila Nova de Foz Côa.",
+      "facts": [
+        {
+          "value": "22 ha",
+          "label": "De vinha"
+        },
+        {
+          "value": "5 ha",
+          "label": "De olival"
+        },
+        {
+          "value": "4 ha",
+          "label": "De amendoal"
+        }
+      ]
+    },
+    "dream": {
+      "kicker": "2022",
+      "title": "Do escritório para a vinha.",
+      "body": [
+        "Durante anos dedicámo-nos à produção de uvas, dando continuidade ao legado que recebemos. Mas havia um sonho guardado: transformar o fruto da nossa terra em vinho, com identidade própria e com o nome da família.",
+        "Esse sonho ganhou forma através de um filho. Solicitador de profissão, nunca deixou de sentir que as suas raízes estavam na terra. Um dia trocou a segurança do escritório pela incerteza de um sonho e regressou às vinhas onde cresceu e aos ensinamentos dos avós.",
+        "Em 2022, com o lançamento do nosso primeiro vinho tinto, nasceu a marca Aromas do Côa."
+      ],
+      "alt": "Caminho de terra entre socalcos de vinha, junto a um muro de xisto"
+    },
+    "passion": {
+      "lines": ["Não por acaso.", "Não por oportunidade.", "Mas por paixão."],
+      "body": "A paixão de quem vive a vinha, conhece cada parcela, cada cacho e cada colheita, e acredita que um grande vinho começa muito antes de chegar à adega."
+    },
+    "cellar": {
+      "kicker": "Do nosso chão para a garrafa",
+      "title": "Queremos que seja a uva a falar.",
+      "body": [
+        "Todos os nossos vinhos são vinificados por nós, em adega própria, a partir de uvas exclusivamente nossas: castas brancas e tintas, selecionadas e trabalhadas pela família com o maior rigor.",
+        "Privilegiamos métodos tradicionais e artesanais, o acompanhamento atento de cada etapa e uma intervenção mínima, para que cada vinho seja a expressão do lugar onde nasce e das mãos que o trabalham."
+      ],
+      "alt": "Rótulo do Aromas do Côa Superior 2023, com o átomo dourado, ao lado de um copo de vinho tinto"
+    },
+    "symbol": {
+      "kicker": "O nosso símbolo",
+      "title": "Os elementos invisíveis de cada vinho.",
+      "body": "Inspirado na estrutura de um átomo, o nosso símbolo representa a união das forças discretas que tornam cada vinho único. Impossíveis de medir, estão presentes em cada decisão, em cada vindima e em cada garrafa.",
+      "forces": [
+        "Paixão",
+        "Dedicação",
+        "Terra",
+        "Tempo",
+        "Família",
+        "Resiliência",
+        "Sacrifício"
+      ],
+      "closing": "Separadamente são apenas partes. Juntas, criam identidade, emoção e autenticidade."
+    },
+    "closing": {
+      "title": "Porque o vinho acaba. Mas a memória de um grande vinho permanece.",
+      "body": "Que cada garrafa leve consigo um pedaço desta terra, da sua paisagem e da sua história.",
+      "cta": "Descobrir os vinhos",
+      "alt": "Socalcos de vinha em anfiteatro sob céu azul, em Vila Nova de Foz Côa"
+    }
   }
 }

@@ -3,7 +3,7 @@
 import { Button, Drawer } from "@heroui/react";
 import { useState } from "react";
 
-import { type NavItem } from "@/content/site";
+import { localeHref, type NavItem } from "@/content/site";
 import { type Locale } from "@/lib/i18n";
 
 type MobileNavProps = {
@@ -44,7 +44,7 @@ export function MobileNav({ lang, items, labels }: MobileNavProps) {
                 {items.map((item) => (
                   <a
                     key={item.href}
-                    href={item.href}
+                    href={localeHref(lang, item.href)}
                     onClick={() => setIsOpen(false)}
                     className="border-line text-ink border-b py-4 text-2xl font-semibold tracking-tight"
                   >

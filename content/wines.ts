@@ -37,8 +37,8 @@ export const wines: Wine[] = [
     slug: "tinto",
     name: { pt: "Tinto", en: "Red" },
     tagline: {
-      pt: "Feito de xisto e de verões longos. Três colheitas, a mesma vinha.",
-      en: "Made of schist and long summers. Three vintages, one vineyard.",
+      pt: "O vinho com que tudo começou, em 2022. Três colheitas, a mesma vinha.",
+      en: "The wine where it all began, in 2022. Three vintages, one vineyard.",
     },
     glass: "#1c1a19",
     vintages: [
